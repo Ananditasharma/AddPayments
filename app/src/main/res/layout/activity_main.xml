@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+    <TextView
+        android:id="@+id/tv_payments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Payments"
+        android:textColor="@color/Black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_payments"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"/>
+    <TextView
+        android:id="@+id/tv_addPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Add"
+        android:layout_below="@+id/recycler_view"
+        android:textColor="@color/Blue"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="80dp"
+        android:text="Save"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_border"
+        android:layout_below="@+id/tv_addPayment"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

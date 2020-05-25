@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AddPayment</string>
+    <string name="TotalAmount">Total Amount = Rs.</string>
+    <string name="Add">Add Payment</string>
+    <string name="Provider">Provider(ICICI,Citibank,etc.)</string>
+    <string name="transactinref">Transaction Reference</string>
+</resources>
